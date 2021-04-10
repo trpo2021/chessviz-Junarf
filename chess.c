@@ -27,8 +27,27 @@ void doska(char Desk[][9])
     Desk[4][0] ='4'; //chetvertaya stroka
     Desk[5][0] ='5'; //pyataya stroka
     Desk[6][0] ='6'; //shestaya stroka
+    Desk[7][0] ='7'; //sedmaya stroka
+    Desk[8][0] ='8'; //vosmaya stroka
     
-   for (x = 1;x < 9;x++) {
-     Desk[2][x] = 'P'; // rasstanovka peshek
+   for(x = 1;x < 9;x++) {
+     Desk[2][x] ='P'; // rasstanovka peshek
       }
-   
+   for(x = 3;x < 6;x++){
+     for (y = 1;y < 9;y++;{
+	 Desk[x][y]= 32;
+      }
+    }
+     for(x = 1;x < 9;x++){
+       Desk[7][i] ='p'; // rasstanovka peshek s drygoi storoni
+     }
+     Desk[8][1] ='r';
+     Desk[8][2] ='n';
+     Desk[8][3] ='b';
+     Desk[8][4] ='q';
+     Desk[8][5] ='k';
+     Desk[8][6] ='b';
+     Desk[8][7] ='n';
+     Desk[8][8] ='r';//zapolnenie figurami vtoroy storony
+
+   }
