@@ -51,3 +51,19 @@ void doska(char Desk[][9])
      Desk[8][8] ='r';//zapolnenie figurami vtoroy storony
 
    }
+   int Printboard(char Desk[][9])
+   {
+     int i, j;
+     print("\n");
+     for (i=8;i>-1;i--){
+       for (j=0;j<9;j++){
+	 if (Desk[i][j]==0)
+	   Desk[i][j]=32;//pustota
+	 printf("%4c", Desk[i][j];
+		}
+	   printf("\n");
+       }
+       printf("\n-%d-\n", Desk[0][0];
+	      return 0;
+	      }
+       
