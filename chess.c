@@ -39,7 +39,7 @@ void doska(char Desk[][9])
       }
     }
      for(x = 1;x < 9;x++){
-       Desk[7][i] ='p'; // rasstanovka peshek s drygoi storoni
+       Desk[7][x] ='p'; // rasstanovka peshek s drygoi storoni
      }
      Desk[8][1] ='r';
      Desk[8][2] ='n';
@@ -53,17 +53,23 @@ void doska(char Desk[][9])
    }
    int Printboard(char Desk[][9])
    {
-     int i, j;
+     int x, y;
      print("\n");
-     for (i=8;i>-1;i--){
-       for (j=0;j<9;j++){
-	 if (Desk[i][j]==0)
-	   Desk[i][j]=32;//pustota
-	 printf("%4c", Desk[i][j];
+     for (x=8;x>-1;x--){
+       for (y=0;y<9;y++){
+	 if (Desk[x][y]==0)
+	   Desk[x][y]=32;//pustota
+	 printf("%4c", Desk[x][y];
 		}
 	   printf("\n");
        }
        printf("\n-%d-\n", Desk[0][0];
 	      return 0;
 	      }
+    int main(){
+    char Desk[9][9];
+    doska(Desk);
+    Printboard(Desk);
+    return 0;
+   }
        
